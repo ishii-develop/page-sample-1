@@ -6,11 +6,10 @@
 </head>
 <body>
   <h1>SAMPLE-PAGE</h1>
-  <img id="myImage" src="comics.jpg" alt="元画像">
-  <script>
-    const img = document.getElementById('myImage');
-    const now = new Date().getTime();
-    img.src = `comics.jpg?ts=${now}`;
-  </script>
+  <ul>
+    <li><a href="before1.html">分割前（width指定なし）</a></li>
+    <li><a href="before2.html">分割前（スマホ対応）</a></li>
+    <li><a href="after.html">分割後</a></li>
+  </ul>
 </body>
 </html>

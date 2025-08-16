@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>分割後（スマホ対応）</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <h1>分割後（スマホ対応）</h1>
+  <img id="myImage" src="comics.jpg" alt="元画像">
+  <script>
+    const img = document.getElementById('myImage');
+    const now = new Date().getTime();
+    img.src = `comics.jpg?ts=${now}`;
+  </script>
+</body>

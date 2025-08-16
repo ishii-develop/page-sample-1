@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>分割前（width指定なし）</title>
+</head>
+<body>
+  <h1>分割前（width指定なし）</h1>
+  <img id="myImage" src="comics.jpg" alt="元画像">
+  <script>
+    const img = document.getElementById('myImage');
+    const now = new Date().getTime();
+    img.src = `comics.jpg?ts=${now}`;
+  </script>
+</body>
+</html>
